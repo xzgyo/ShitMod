@@ -16,10 +16,14 @@ public class ModCreativeModTabs {
             .icon(() -> ModItems.SHIT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 // item
-                output.accept(ModItems.SHIT.get()); //粑粑
                 output.accept(ModItems.SHIT_INGOT.get()); //粑粑锭
                 // food
-                output.accept(ModItems.EGG_TART.get());
+                output.accept(ModItems.SHIT.get()); //粑粑
+                output.accept(ModItems.EGG_TART.get()); //蛋挞
+                output.accept(ModItems.PIZZA.get()); //批萨
+                output.accept(ModItems.CABBAGE.get()); //白菜
+                output.accept(ModItems.PLATE.get()); //盘菜
+                output.accept(ModItems.EGG_FRIED_RICE.get()); //蛋炒饭
                 // block
                 output.accept((ModBlocks.SHIT_BLOCK.get()));
             }).build());
