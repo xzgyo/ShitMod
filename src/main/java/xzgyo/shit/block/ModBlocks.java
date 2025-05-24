@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -19,7 +20,7 @@ import xzgyo.shit.item.ModItems;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ShitMod.MOD_ID);
 
-    public static final RegistryObject<Block> SHIT_BLOCK = registryBlock("shit_block", () -> new Block(BlockBehaviour.Properties.of()
+    public static final RegistryObject<Block> SHIT_BLOCK = registryBlock("shit_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)
             .mapColor(MapColor.COLOR_BROWN)
             .instrument(NoteBlockInstrument.BASEDRUM)
             .strength(2f))); //定义方块：依托答辩
@@ -32,9 +33,5 @@ public class ModBlocks {
 
     public static <T extends Block>RegistryObject<Item> registryBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-    }
-
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
     }
 }

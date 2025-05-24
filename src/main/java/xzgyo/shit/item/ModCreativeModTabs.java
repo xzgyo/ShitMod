@@ -18,10 +18,9 @@ public class ModCreativeModTabs {
                 // item
                 output.accept(ModItems.SHIT.get()); //粑粑
                 output.accept(ModItems.SHIT_INGOT.get()); //粑粑锭
+                // food
+                output.accept(ModItems.EGG_TART.get());
                 // block
                 output.accept((ModBlocks.SHIT_BLOCK.get()));
             }).build());
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
 }

@@ -31,9 +31,9 @@ public class ShitMod {
     public ShitMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
         // 注册各种东西
-        ModCreativeModTabs.register(modEventBus);
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
         // 其它东西
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
