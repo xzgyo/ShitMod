@@ -14,7 +14,7 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300), 1f) //md小可爱反胃居然叫这个
             .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 600), 1f) //失明
             .effect(() -> new MobEffectInstance(MobEffects.WEAKNESS, 200), 1f) //肾虚（bushi）
-            .build(); //粑粑
+            .build(); //一坨Shit
 
     public static final FoodProperties EGG_TART = new FoodProperties.Builder()
             .alwaysEat()

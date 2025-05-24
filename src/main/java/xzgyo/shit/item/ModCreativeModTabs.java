@@ -16,6 +16,7 @@ public class ModCreativeModTabs {
             .icon(() -> ModItems.SHIT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 // item
+                output.accept(ModItems.SHITBALL.get()); //粑粑球
                 output.accept(ModItems.SHIT_INGOT.get()); //粑粑锭
                 // food
                 output.accept(ModItems.SHIT.get()); //粑粑

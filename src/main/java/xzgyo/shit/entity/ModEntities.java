@@ -12,8 +12,9 @@ public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ShitMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<SiChuanFenDaEntity>> SI_CHUAN_FEN_DA_ENTITY = ENTITIES.register("si_chuan_fen_da",
-            () -> EntityType.Builder.of(SiChuanFenDaEntity::new, MobCategory.CREATURE)
+    public static final RegistryObject<EntityType<ShitBall>> SHITBALL = ENTITIES.register("shitball",
+            () -> EntityType.Builder.<ShitBall>of(ShitBall::new, MobCategory.MISC)
                     .sized(1.0f, 1.0f)
-                    .build(new ResourceLocation(ShitMod.MOD_ID, "si_chuan_fen_da").toString()));
+                    .build(new ResourceLocation(ShitMod.MOD_ID, "shitball").toString())
+    );
 }
