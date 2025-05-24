@@ -18,6 +18,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import xzgyo.shit.block.ModBlocks;
+import xzgyo.shit.entity.ModEntities;
 import xzgyo.shit.item.ModCreativeModTabs;
 import xzgyo.shit.item.ModItems;
 
@@ -34,6 +35,7 @@ public class ShitMod {
         ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
+        ModEntities.ENTITIES.register(modEventBus);
         // 其它东西
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
