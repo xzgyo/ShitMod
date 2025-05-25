@@ -14,13 +14,13 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<ShitBall>> SHITBALL = ENTITIES.register("shitball",
             () -> EntityType.Builder.<ShitBall>of(ShitBall::new, MobCategory.MISC)
-                    .sized(1.0f, 1.0f)
+                    .sized(0.1f, 0.1f)
                     .build(new ResourceLocation(ShitMod.MOD_ID, "shitball").toString())
     );
 
     public static final RegistryObject<EntityType<Cabbage>> CABBAGE = ENTITIES.register("cabbage",
             () -> EntityType.Builder.<Cabbage>of(Cabbage::new, MobCategory.MISC)
-                    .sized(1.0f, 1.0f)
+                    .sized(0.1f, 0.1f)
                     .build(new ResourceLocation(ShitMod.MOD_ID, "cabbage").toString())
     );
 

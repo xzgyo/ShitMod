@@ -34,7 +34,7 @@ public class ModItems {
                     if (!level.isClientSide) {
                         ShitBall snowball = new ShitBall(level, player);
                         snowball.setItem(stack);
-                        snowball.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+                        snowball.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 0.85F, 1.0F);
                         level.addFreshEntity(snowball);
                     }
 
@@ -58,7 +58,7 @@ public class ModItems {
                     if (!level.isClientSide) {
                         Cabbage snowball = new Cabbage(level, player);
                         snowball.setItem(stack);
-                        snowball.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+                        snowball.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 0.85F, 1.0F);
                         level.addFreshEntity(snowball);
                     }
 

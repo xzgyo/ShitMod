@@ -46,11 +46,10 @@ public class SiChuanFenDa extends Monster {
     @Override
     protected void registerGoals() {
         //super.registerGoals();
-        this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class, 10f));
         this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
-        this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, 10f));
-        this.goalSelector.addGoal(5, new RandomStrollGoal(this, .8d));
+        this.goalSelector.addGoal(4, new RandomStrollGoal(this, .8d));
     }
 
     protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
