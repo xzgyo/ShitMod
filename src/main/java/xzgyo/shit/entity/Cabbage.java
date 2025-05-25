@@ -15,21 +15,21 @@ import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import xzgyo.shit.item.ModItems;
 
-public class ShitBall extends ThrowableItemProjectile {
-    public ShitBall(EntityType<? extends ShitBall> entityType, Level level) {
+public class Cabbage extends ThrowableItemProjectile {
+   public Cabbage(EntityType<? extends Cabbage> entityType, Level level) {
       super(entityType, level);
    }
 
-   public ShitBall(Level level, LivingEntity thrower) {
-      super(ModEntities.SHITBALL.get(), thrower, level);
+   public Cabbage(Level level, LivingEntity thrower) {
+      super(ModEntities.CABBAGE.get(), thrower, level);
    }
 
-   public ShitBall(Level level, double x, double y, double z) {
-      super(ModEntities.SHITBALL.get(), x, y, z, level);
+   public Cabbage(Level level, double x, double y, double z) {
+      super(ModEntities.CABBAGE.get(), x, y, z, level);
    }
 
-    protected Item getDefaultItem() {
-      return ModItems.SHITBALL.get();
+   protected Item getDefaultItem() {
+      return ModItems.CABBAGE.get();
    }
 
    private ParticleOptions getParticle() {

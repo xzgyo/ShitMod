@@ -13,16 +13,16 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ShitMod.MOD_ID);
     public static final RegistryObject<CreativeModeTab> SHIT_TAB = CREATIVE_MODE_TABS.register("shit_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ModItems.SHIT.get().getDefaultInstance())
+            .icon(() -> ModItems.SHIT_INGOT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 // item
                 output.accept(ModItems.SHITBALL.get()); //粑粑球
+                output.accept(ModItems.CABBAGE.get()); //白菜
                 output.accept(ModItems.SHIT_INGOT.get()); //粑粑锭
+                output.accept(ModItems.SI_CHUAN_FEN_DA_EGG.get()); //四川芬达刷怪蛋
                 // food
-                output.accept(ModItems.SHIT.get()); //粑粑
                 output.accept(ModItems.EGG_TART.get()); //蛋挞
                 output.accept(ModItems.PIZZA.get()); //批萨
-                output.accept(ModItems.CABBAGE.get()); //白菜
                 output.accept(ModItems.PLATE.get()); //盘菜
                 output.accept(ModItems.EGG_FRIED_RICE.get()); //蛋炒饭
                 // block

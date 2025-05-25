@@ -17,4 +17,18 @@ public class ModEntities {
                     .sized(1.0f, 1.0f)
                     .build(new ResourceLocation(ShitMod.MOD_ID, "shitball").toString())
     );
+
+    public static final RegistryObject<EntityType<Cabbage>> CABBAGE = ENTITIES.register("cabbage",
+            () -> EntityType.Builder.<Cabbage>of(Cabbage::new, MobCategory.MISC)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(ShitMod.MOD_ID, "cabbage").toString())
+    );
+
+    public static final RegistryObject<EntityType<SiChuanFenDa>> SI_CHUAN_FEN_DA = ENTITIES.register("si_chuan_fen_da",
+            () -> EntityType.Builder.<SiChuanFenDa>of(SiChuanFenDa::new, MobCategory.MONSTER)
+                    .setTrackingRange(64)
+                    .setUpdateInterval(3)
+                    .sized(.6f, 1.8f)
+                    .build(new ResourceLocation(ShitMod.MOD_ID, "si_chuan_fen_da").toString())
+    );
 }

@@ -1,12 +1,13 @@
 {
   "creativetab.shit.shit_tab": "四川芬达：丢手绢",
   "item.shit.shit_ingot": "粑粑锭",
-  "item.shit.shitball": "粑粑",
-  "item.shit.shit": "一坨粑粑",
+  "item.shit.shitball": "粑球",
   "item.shit.egg_tart": "蛋挞",
   "item.shit.pizza": "比萨",
   "item.shit.cabbage": "白菜",
   "item.shit.plate": "盘菜",
   "item.shit.egg_fried_rice": "蛋炒饭",
-  "block.shit.shit_block": "依托答辩"
+  "block.shit.shit_block": "依托答辩",
+  "entity.shit.si_chuan_fen_da": "四川芬达",
+  "item.shit.si_chuan_fen_da_egg": "四川芬达刷怪蛋"
 }

@@ -69,6 +69,7 @@ public class ShitMod {
         @SubscribeEvent
         public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
             event.registerEntityRenderer(ModEntities.SHITBALL.get(), ThrownItemRenderer::new);
+            event.registerEntityRenderer(ModEntities.CABBAGE.get(), ThrownItemRenderer::new);
         }
     }
 

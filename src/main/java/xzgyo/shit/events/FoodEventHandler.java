@@ -20,14 +20,10 @@ public class FoodEventHandler {
             Item item = itemStack.getItem();
 
             // 下面是魔法！魔法！
-            if (item == ModItems.SHIT.get()) {
-                player.displayClientMessage(Component.literal("他们朝我扔粑粑"), true);
-            } else if (item == ModItems.EGG_TART.get()) {
+            if (item == ModItems.EGG_TART.get()) {
                 player.displayClientMessage(Component.literal("他们朝我扔粑粑，我拿粑粑作蛋挞"),true);
             } else if (item == ModItems.PIZZA.get()) {
                 player.displayClientMessage(Component.literal("他们朝我扔粑粑，我拿粑粑作比萨"),true);
-            } else if (item == ModItems.CABBAGE.get()) {
-                player.displayClientMessage(Component.literal("他们朝我扔白菜"), true);
             } else if (item == ModItems.PLATE.get()) {
                 player.displayClientMessage(Component.literal("他们朝我扔白菜，我拿白菜炒盘菜"), true);
             } else if (item == ModItems.EGG_FRIED_RICE.get()) {
